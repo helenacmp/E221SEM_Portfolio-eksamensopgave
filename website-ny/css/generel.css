@@ -464,12 +464,7 @@ col_1_2 img {
 }
 
 #playbackrate {
-  font-family: "Abel";
-  font-size: 0.8em;
-  position: absolute;
-  top: 4%;
-  right: 5%;
-  color: white;
+  display: none;
 }
 
 .col_1_1_1_rows {
@@ -901,7 +896,7 @@ col_1_2 img {
 
   .col_1_1_1_about img {
     top: 15%;
-    width: 40%;
+    width: 30%;
     position: relative;
   }
 

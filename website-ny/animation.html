@@ -18,7 +18,7 @@
               <ul>
                 <li class="dropdown-item"><a href="web.html" class="dropdown-link">BASIC WEB</a></li>
                 <li class="dropdown-item"><a href="ux.html" class="dropdown-link">BASIC UX</a></li>
-                <li class="dropdown-item"><a href="animation.html" class="dropdown-link">ANIMATION</a></li>
+                <li class="dropdown-item"><a href="animation.html" class="dropdown-link">BASIC ANIMATION</a></li>
                 <li class="dropdown-item"><a href="content.html" class="dropdown-link">BASIC CONTENT</a></li>
                 <li class="dropdown-item"><a href="eksamen.html" class="dropdown-link">PORTFOLIO</a></li>
               </ul>
@@ -30,10 +30,10 @@
       </nav>
       <div class="header_background_animation flex">
         <div class="header_headline">
-          <h1 class="overskrift">04 / ANIMATION</h1>
+          <h1 class="overskrift">04 / BASIC ANIMATION</h1>
           <div class="header_copy">
             <p class="center">
-              På denne side kan I se, hvordan jeg har løst opgaverne til temaet Animation, hvor vi blev introduceret til Javascript, spildesign samt teori og konventioner inden for UI-elementer, figurelementer, baggrundsdesign og
+              På denne side kan I se, hvordan jeg har løst opgaverne til temaet Basic Animation, hvor vi blev introduceret til Javascript, spildesign samt teori og konventioner inden for UI-elementer, figurelementer, baggrundsdesign og
               kompositionsteknikker.
             </p>
           </div>
@@ -68,11 +68,11 @@
             figurerne bliver statiske at se på. Two Dots gør desuden brug af Baby Bias, hvor figurerne får store og runde hoveder. <br /><br />
 
             Efterfølgende blev vi introduceret til aktivitets- og State Machine diagrammer. Aktivitetsdiagrammer bruges til at beskrive en aktivitet som følge af handlinger og beslutninger, som sker i en bestemt rækkefølge. Her lærte jeg bl.a.
-            hvordan man visuelt viser forskellige handlinger gennem bestemte elementer/symboler, fx at handlinger bliver illustreret gennem kasser med runde hjørne, og beslutninger gennem ruder med forgreninger. <br />
+            hvordan man visuelt viser forskellige handlinger gennem bestemte elementer/symboler, fx at handlinger bliver illustreret gennem kasser med runde hjørner, og beslutninger gennem ruder med forgreninger. <br />
             <br />
 
             Et State Machine diagram er lidt mere detaljeret end et aktivitetsdiagram, da det viser de forskellige tilstande, der er i spillet, og hvordan de er forbundet og kan lede videre til en anden tilstand. I min State Machine diagram kan man
-            fx se, at når vinduet loades, så stater funktionen sidenVises, hvor nogle skærme skjules og startskærmen vises. Klikker man på start knappen starter funktionen startSpil, hvor de nye aktiviteter går i gang, bl.a. nulstilles point og liv
+            fx se, at når vinduet loades, så starter funktionen sidenVises, hvor nogle skærme skjules og startskærmen vises. Klikker man på start-knappen starter funktionen startSpil, hvor de nye aktiviteter går i gang, bl.a. nulstilles point og liv
             og timeren sættes i gang.
           </p>
           <br />
@@ -91,12 +91,12 @@
           <h3 class="black_overskrift_padding">Javascript</h3>
           <br />
           <p class="black_tekst_padding">
-            En stor del af opgaven gik med Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument og tilhørende CSS-dokument med metoden
-            document.querySelector. I parentesen skriver man navnet på den class eller id, man kalder på i CSS dokumentet. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en
-            anden tilstand. <br /><br />
+            En stor del af opgaven fokuserede på Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument og tilhørende CSS-dokument med
+            metoden document.querySelector. I parentesen skriver man navnet på den class eller id, man kalder på. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en anden
+            tilstand. <br /><br />
 
-            I eksemplet til venstre kan man se, at jeg gennem document.querySelector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove
-            fjerner jeg en klasse, som i mit tilfælde er en class med navnet ‘hide’. <br /><br />
+            På eksemplet her kan man se, at jeg gennem document.querySelector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove fjerner jeg
+            en klasse, som i mit tilfælde er en class med navnet ‘hide’. <br /><br />
 
             I linjen nedenunder bruger jeg document.querySelector til at lede efter et id med navnet start_btn. Derefter bruger jeg addEventListener til at lytte efter et museklik på knappen, som vil sætte funktionen SidenVises i gang. I linjen efter
             sættes baggrundsmusikken til at spille.
@@ -107,7 +107,7 @@
     </main>
     <footer class="footer">
       <p class="footer_tekst">2023</p>
-      <p class="footer_tekst">BLONDE STUDIO</p>
+      <h4 class="footer_tekst">BLONDE STUDIO</h4>
     </footer>
   </body>
 </html>
