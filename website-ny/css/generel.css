@@ -1,0 +1,889 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+
+@font-face {
+  font-family: "Chromate";
+  src: url("../fonts/Chromate-Regular.ttf");
+}
+
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+
+h1 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 40px;
+}
+h3 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 20px;
+}
+h4 {
+  font-family: "Chromate";
+  color: white;
+  font-size: 16px;
+}
+p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+/* ––––––––––––––––––––––– Navigation ––––––––––––––––––– */
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  width: 100%;
+  top: 10px;
+  left: 0;
+  padding: 5px 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  margin: 0 40px;
+}
+
+/* links i navigationslinjen */
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+
+.nav-link:hover {
+  font-style: italic;
+}
+
+/* styling af tekst i navigationslinjen */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Chromate";
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+.dropdown_menu {
+  display: none;
+  z-index: 1;
+}
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+/* links i dropdown menu */
+.dropdown-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+/* styling af tekst i dropdown menu */
+.dropdown-link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Chromate";
+  margin: 7px;
+}
+
+.dropdown-item:hover {
+  font-style: italic;
+}
+
+/* ––––––––––––––––––– Klik Btn ––––––––––––––––––– */
+
+.klik_btn {
+  flex: 1 1 auto;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #f6d365 0%, #bd4c48 51%, #f6d365 100%);
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.6s;
+}
+
+.klik_btn:hover {
+  background-position: right center;
+}
+
+/* ––––––––––––––––––– Footer ––––––––––––––––––– */
+
+.footer_tekst {
+  text-align: center;
+  color: black;
+}
+
+.footer {
+  padding: 5%;
+}
+
+/* ––––––––––––––––––– Forside ––––––––––––––––––– */
+
+.col_1_1_hjem {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.body_image_hjem {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: auto;
+}
+
+.logo {
+  position: relative;
+  max-width: 67%;
+  transition: 1s;
+  top: 11%;
+  left: 10%;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.velkommen {
+  position: relative;
+  top: 40%;
+}
+
+.velkommen:hover {
+  font-style: italic;
+}
+
+/* ––––––––––––––––––– Header på sider ––––––––––––––––––– */
+
+.header {
+  margin-top: 7%;
+}
+
+.overskrift {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+/* ––––––––––––––––––– Portfolio forside ––––––––––––––––––– */
+
+#portfolio {
+  background: url(../assets/red-orange.png) no-repeat;
+}
+
+.body_image {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+}
+
+.col_4 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  top: 40%;
+  right: 50%;
+  gap: 20px;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4,
+.box_5 {
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.box_1:hover,
+.box_2:hover,
+.box_3:hover,
+.box_4:hover,
+.box_5:hover {
+  transform: scale(1.1);
+}
+
+.black {
+  color: black;
+  padding: 5%;
+}
+
+.black_tekst {
+  color: black;
+  margin-left: 5%;
+}
+
+.black_tekst_padding {
+  color: black;
+}
+
+.black_overskrift_padding {
+  color: black;
+}
+
+.black_overskrift {
+  color: black;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+/* ––––––––––––––––––– Basic web ––––––––––––––––––– */
+
+.header_background {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.col_1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 5%;
+  row-gap: 20px;
+  gap: 10px;
+}
+
+.web_box {
+  border-style: solid;
+  border-color: rgb(69, 68, 68);
+  border-radius: 15px;
+  border-width: thin;
+  width: 100%;
+}
+
+.web_box_wide {
+  border-style: solid;
+  border-color: rgb(69, 68, 68);
+  border-radius: 15px;
+  border-width: thin;
+  width: 100%;
+}
+
+col_1_2 img {
+  width: 100%;
+  margin: 5%;
+}
+
+/* ––––––––––––––––––– Col_1_1 ––––––––––––––––––– */
+
+.col_1_1 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.col_1_1 img {
+  width: 100%;
+}
+
+.border {
+  border-style: solid;
+  border-width: thin;
+}
+
+/* ––––––––––––––––––– Basic UX ––––––––––––––––––– */
+
+.header_background_ux {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.col_1_1_1 {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.col_1_1_1 img {
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+}
+
+/* ––––––––––––––––––– Animation ––––––––––––––––––– */
+
+.header_background_animation {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+/* ––––––––––––––––––– Basic indhold ––––––––––––––––––– */
+
+.header_background_content {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.overskrift_content {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.col_1_2_content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  row-gap: 20px;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.row_2 {
+  grid-column: 1/3;
+}
+
+#video_container {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+#video_file {
+  width: 100%;
+}
+
+#controls {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#play,
+#stop {
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 12%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  padding: 3px;
+}
+
+#play {
+  background-image: url("../assets/play.svg");
+}
+
+#stop {
+  background-image: url("../assets/stop.svg");
+}
+
+.col_1_1_1_rows {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  gap: 20px;
+}
+
+.col_1_1_1_rows img {
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+}
+
+.berttest {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/* ––––––––––––––––––– Om mig ––––––––––––––––––– */
+
+.header_background_about {
+  background: url(../assets/red-orange.png) no-repeat;
+  background-size: cover;
+  height: 55vh;
+}
+
+.header_about {
+  position: relative;
+  grid-column: 2/4;
+  max-width: 100%;
+  margin: 5%;
+}
+
+.col_1_1_1_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.col_1_1_1_about img {
+  width: 75%;
+  position: relative;
+}
+
+.col_1_1_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  gap: 5%;
+}
+
+.skills {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: thin;
+  padding: 2%;
+  margin: 2%;
+}
+
+/*-------------Responsiv til max 1200 px------------*/
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ---------Porfolio site---------  */
+  .col_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5%;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5 {
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 1s;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  /*------Basic web----------*/
+
+  .web_box {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+    width: 100%;
+  }
+
+  .col_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .col_1_2 img {
+    width: 100%;
+  }
+
+  /*--------Basic UX--------*/
+
+  .web_box_wide {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+    width: 100%;
+  }
+
+  /*--------Content--------*/
+
+  .col_1_2_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .row_2 {
+    grid-column: 1/3;
+  }
+
+  .col_1_1_1_rows {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .col_1_1_1_rows img {
+    width: 100%;
+  }
+
+  .berttest {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /*--------HJEM--------*/
+
+  .col_1_1_hjem {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15%;
+  }
+
+  .logo {
+    position: relative;
+    max-width: 70%;
+    transition: 1s;
+    grid-row: 2/3;
+  }
+  .velkommen {
+    font-size: 40px;
+    top: 70%;
+  }
+
+  /*--------OM MIG--------*/
+
+  .col_1_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .col_1_1_1_about img {
+    width: 75%;
+    position: relative;
+  }
+
+  .h2_about {
+    font-size: 30px;
+  }
+
+  .p_about {
+    font-size: 15px;
+  }
+
+  .col_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .header_about {
+    position: relative;
+    grid-column: 2/3;
+    max-width: 100%;
+    margin: 5%;
+  }
+}
+
+/*-------------Responsiv til max 800 px------------*/
+
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* links i dropdown menu */
+  .dropdown_menu {
+    display: none;
+    background-image: url(../assets/red-orange.png);
+    background-size: cover;
+    z-index: 1;
+  }
+
+  /* ---------Porfolio site---------  */
+  .col_4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+
+  .header {
+    margin-top: 13%;
+  }
+
+  .overskrift {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .center {
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 4%;
+  }
+
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4,
+  .box_5 {
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 1s;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  /*------Basic web----------*/
+
+  .col_1_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    gap: 10px;
+  }
+
+  .col_1_2 img {
+    width: 100%;
+  }
+
+  .web_box {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+  }
+
+  .col_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .col_1_1 img {
+    order: +1;
+  }
+  /*------Basic UX----------*/
+
+  .web_box_wide {
+    border-style: solid;
+    border-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    border-width: thin;
+  }
+
+  .col_1_1_1 {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .col_1_1_1 img {
+    width: 100%;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  /*-----Basic content-------*/
+
+  .col_1_2_content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .row_2 {
+    grid-column: auto;
+  }
+
+  .col_1_1_1_rows {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  /* .col_1_1_1_rows img {
+    width: 100%;
+  } */
+
+  .berttest {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .wireframe {
+    width: 70%;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /*-----HJEM-------*/
+
+  .col_1_1_hjem {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15%;
+    max-width: 100%;
+  }
+
+  .velkommen {
+    position: relative;
+    font-size: 40px;
+    width: 400px;
+    margin-top: 9%;
+  }
+
+  .logo_flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    position: relative;
+    margin-top: 10%;
+    max-width: 40%;
+    transition: 1s;
+  }
+
+  /*-----OMG MIG-------*/
+
+  .header_background_about {
+    background: url(../assets/red-orange.png) no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .col_1_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+  }
+
+  .col_1_1_1_about img {
+    top: 15%;
+    width: 40%;
+    position: relative;
+  }
+
+  .h2_about {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .p_about {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .header_about {
+    position: relative;
+    grid-column: auto;
+    max-width: 100%;
+    margin: 5%;
+  }
+
+  .col_1_1_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 5%;
+  }
+}

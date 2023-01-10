@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/generel.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/tiy6kco.css" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">PORTFOLIO<i></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li class="dropdown-item"><a href="web.html" class="dropdown-link">BASIC WEB</a></li>
+                <li class="dropdown-item"><a href="ux.html" class="dropdown-link">BASIC UX</a></li>
+                <li class="dropdown-item"><a href="animation.html" class="dropdown-link">ANIMATION</a></li>
+                <li class="dropdown-item"><a href="content.html" class="dropdown-link">BASIC CONTENT</a></li>
+                <li class="dropdown-item"><a href="eksamen.html" class="dropdown-link">PORTFOLIO</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link">HJEM</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">OM MIG</a></li>
+        </ul>
+      </nav>
+      <div class="header_background_animation flex">
+        <div class="header_headline">
+          <h1 class="overskrift">04 / ANIMATION</h1>
+          <div class="header_copy">
+            <p class="center">
+              På denne side kan I se, hvordan jeg har løst opgaverne til temaet Animation, hvor vi blev introduceret til Javascript, spildesign samt teori og konventioner inden for UI-elementer, figurelementer, baggrundsdesign og
+              kompositionsteknikker.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="col_1_1">
+        <div class="web_box_wide">
+          <h4 class="black">04.04.01 Temaopgave</h4>
+          <p class="black">
+            Den endelige opgave på dette tema bestod af et interaktivt animeret spil, som vi selv skulle designe og programmere. Der var en række tekniske krav, som spillet skulle opfylde, bl.a. ift. spilstrukturen, UX-elementer mv. <br /><br />
+            Udover selve spillet, skulle vi også aflevere et website, som skulle indeholde dokumentation for udviklingen af spillet. Det indebar bl.a. en beskrivelse af ideen, en teknisk dokumentation gennem diagrammer, skitser mv.
+          </p>
+        </div>
+        <div>
+          <h4 class="black_overskrift">State Machine diagram</h4>
+          <img src="/assets/04.04.01-state machine.png" alt="04.04.01 State machine" />
+        </div>
+      </div>
+      <div class="col_1_2">
+        <div>
+          <h4 class="black_overskrift">Moodboard</h4>
+          <img src="/assets/04.04.01-moodboard.png" alt="04.04.01 moodboard" />
+        </div>
+        <div>
+          <h3 class="black_overskrift_padding">Design og programmering af spil</h3>
+          <br />
+          <p class="black_tekst_padding">
+            Til konceptudviklingen af vores spil skulle vi tage udgangspunkt i en design stil. Jeg valgte Two Dots stilen, som kan ses på mit moodboard til venstre. Two Dots stilen bryder med en del konventioner, bl.a. solid drawing, som betyder, at
+            der er meget få antydninger af rummelighed og desuden mangel på krop af figurerne. På mine figurer havde jeg fx ingen tydelige skygger, andet end i figurernes hår. Two Dots stilen er desuden meget symmetrisk, som gør, at figurerne bliver
+            statiske at se på. Two Dots gør desuden brug af Baby Bias, hvor figurerne får store og runde hoveder. <br />
+            <br />
+            Efterfølgende blev vi introduceret til aktivitets- og State Machine diagrammer. Aktivitetsdiagrammer bruges til at beskrive en aktivitet som følge af handlinger og beslutninger, som sker i en bestemt rækkefølge. Her lærte jeg bl.a., at
+            man viser start og afslutningen af spillet gennem forskellige cirkler, handlinger bliver illustreret gennem kasser med runde hjørne, og beslutninger gennem ruder med forgreninger. <br />
+            <br />
+            Et State Machine diagram er lidt mere detaljeret end et aktivitetsdiagram, da det viser de forskellige tilstande, der er i spillet, og hvordan de er forbundet og kan lede videre til en anden tilstand. I min State Machine diagram ovenfor
+            kan man fx se, at når vinduet loades, så stater funktionen sidenVises, hvor nogle skærme skjules og startskærmen vises. Klikker man på start knappen starter funktionen startSpil, hvor de nye aktiviteter går i gang, bl.a. nulstilles point
+            og liv og timeren sættes i gang.
+          </p>
+          <br />
+          <br />
+          <a href="https://www.blondestudio.dk/KEA/04_basicanimation/website/index.html" class="klik_btn">FIND MIT SPIL HER</a>
+          <br />
+        </div>
+      </div>
+      <div class="col_1_1">
+        <img src="/assets/04.04.01-queryselector.png" class="border" alt="04.04.01-queryselector" />
+        <div>
+          <h3 class="black_overskrift_padding">Javascript</h3>
+          <br />
+          <p class="black_tekst_padding">
+            En stor del af opgaven gik med Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument med query.selector. I parentesen skriver
+            man navnet på den class eller id, man kalder på. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en anden tilstand. <br />
+            <br />
+            I eksemplet til venstre kan man se, at jeg gennem query.selector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove fjerner jeg en
+            klasse, som i mit tilfælde er en class med navnet ‘hide’. <br />
+            <br />
+            I linjen nedenunder bruger jeg document.query.selector til at lede efter id ‘start_btn’. Derefter bruger jeg addEventListener til at lytte efter et museklik på knappen, som vil sætte funktionen SidenVises i gang. I linjen efter sættes
+            baggrundsmusikken til at spille.
+          </p>
+        </div>
+      </div>
+      <hr />
+    </main>
+    <footer class="footer">
+      <p class="footer_tekst">2023</p>
+      <p class="footer_tekst">BLONDE STUDIO</p>
+    </footer>
+  </body>
+</html>
