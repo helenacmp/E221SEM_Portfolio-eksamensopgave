@@ -4,9 +4,13 @@ function start() {
   const video = document.querySelector("#video_file");
   const playBtn = document.querySelector("#play");
   const stopBtn = document.querySelector("#stop");
+  const slowBtn = document.querySelector("#slowdown");
+  const speedBtn = document.querySelector("#speedup");
 
   playBtn.addEventListener("click", playVideo);
   stopBtn.addEventListener("click", stopVideo);
+  slowBtn.addEventListener("click", speedUpVideo);
+  speedBtn.addEventListener("click", slowDownVideo);
 
   function playVideo() {
     if (video.paused === true) {
@@ -21,5 +25,16 @@ function start() {
     video.pause();
     video.currentTime = 0;
     playBtn.style.backgroundImage = "url(assets/play.svg)";
+  }
+
+  function slowDownVideo() {
+    if (video.playbackRate >= 0.25) {
+      video.playbackRate -= 0.25;
+      playBckRate.textContent = video.playbackRate;
+    }
+  }
+  function speedUpVideo() {
+    video.playbackRate += 0.25;
+    playBckRate.textContent = video.playbackRate;
   }
 }

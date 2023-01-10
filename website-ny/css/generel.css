@@ -436,7 +436,9 @@ col_1_2 img {
 }
 
 #play,
-#stop {
+#stop,
+#slowdown,
+#speedup {
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -452,6 +454,22 @@ col_1_2 img {
 
 #stop {
   background-image: url("../assets/stop.svg");
+}
+
+#slowdown {
+  background-image: url("../assets/previous-fast.svg");
+}
+#speedup {
+  background-image: url("../assets/next-fast.svg");
+}
+
+#playbackrate {
+  font-family: "Abel";
+  font-size: 0.8em;
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  color: white;
 }
 
 .col_1_1_1_rows {
