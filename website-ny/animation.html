@@ -46,7 +46,7 @@
           <h4 class="black">04.04.01 Temaopgave</h4>
           <p class="black">
             Den endelige opgave på dette tema bestod af et interaktivt animeret spil, som vi selv skulle designe og programmere. Der var en række tekniske krav, som spillet skulle opfylde, bl.a. ift. spilstrukturen, UX-elementer mv. <br /><br />
-            Udover selve spillet, skulle vi også aflevere et website, som skulle indeholde dokumentation for udviklingen af spillet. Det indebar bl.a. en beskrivelse af ideen, en teknisk dokumentation gennem diagrammer, skitser mv.
+            Udover selve spillet, skulle vi også aflevere et website, som skulle indeholde dokumentation for udviklingen af spillet. Det indebar bl.a. en beskrivelse af idéen, en teknisk dokumentation gennem diagrammer, skitser mv.
           </p>
         </div>
         <div>
@@ -63,16 +63,17 @@
           <h3 class="black_overskrift_padding">Design og programmering af spil</h3>
           <br />
           <p class="black_tekst_padding">
-            Til konceptudviklingen af vores spil skulle vi tage udgangspunkt i en design stil. Jeg valgte Two Dots stilen, som kan ses på mit moodboard til venstre. Two Dots stilen bryder med en del konventioner, bl.a. solid drawing, som betyder, at
-            der er meget få antydninger af rummelighed og desuden mangel på krop af figurerne. På mine figurer havde jeg fx ingen tydelige skygger, andet end i figurernes hår. Two Dots stilen er desuden meget symmetrisk, som gør, at figurerne bliver
-            statiske at se på. Two Dots gør desuden brug af Baby Bias, hvor figurerne får store og runde hoveder. <br />
+            Til konceptudviklingen af vores spil skulle vi tage udgangspunkt i en design stil. Jeg valgte Two Dots stilen, som kan ses på mit moodboard. Two Dots stilen bryder med en del konventioner, bl.a. solid drawing, som betyder, at der er meget
+            få antydninger af rummelighed og desuden mangel på krop af figurerne. På mine figurer havde jeg fx ingen tydelige skygger, andet end i figurernes hår som kan ses i min asset liste. Two Dots stilen er desuden meget symmetrisk, som gør, at
+            figurerne bliver statiske at se på. Two Dots gør desuden brug af Baby Bias, hvor figurerne får store og runde hoveder. <br /><br />
+
+            Efterfølgende blev vi introduceret til aktivitets- og State Machine diagrammer. Aktivitetsdiagrammer bruges til at beskrive en aktivitet som følge af handlinger og beslutninger, som sker i en bestemt rækkefølge. Her lærte jeg bl.a.
+            hvordan man visuelt viser forskellige handlinger gennem bestemte elementer/symboler, fx at handlinger bliver illustreret gennem kasser med runde hjørne, og beslutninger gennem ruder med forgreninger. <br />
             <br />
-            Efterfølgende blev vi introduceret til aktivitets- og State Machine diagrammer. Aktivitetsdiagrammer bruges til at beskrive en aktivitet som følge af handlinger og beslutninger, som sker i en bestemt rækkefølge. Her lærte jeg bl.a., at
-            man viser start og afslutningen af spillet gennem forskellige cirkler, handlinger bliver illustreret gennem kasser med runde hjørne, og beslutninger gennem ruder med forgreninger. <br />
-            <br />
-            Et State Machine diagram er lidt mere detaljeret end et aktivitetsdiagram, da det viser de forskellige tilstande, der er i spillet, og hvordan de er forbundet og kan lede videre til en anden tilstand. I min State Machine diagram ovenfor
-            kan man fx se, at når vinduet loades, så stater funktionen sidenVises, hvor nogle skærme skjules og startskærmen vises. Klikker man på start knappen starter funktionen startSpil, hvor de nye aktiviteter går i gang, bl.a. nulstilles point
-            og liv og timeren sættes i gang.
+
+            Et State Machine diagram er lidt mere detaljeret end et aktivitetsdiagram, da det viser de forskellige tilstande, der er i spillet, og hvordan de er forbundet og kan lede videre til en anden tilstand. I min State Machine diagram kan man
+            fx se, at når vinduet loades, så stater funktionen sidenVises, hvor nogle skærme skjules og startskærmen vises. Klikker man på start knappen starter funktionen startSpil, hvor de nye aktiviteter går i gang, bl.a. nulstilles point og liv
+            og timeren sættes i gang.
           </p>
           <br />
           <br />
@@ -81,19 +82,24 @@
         </div>
       </div>
       <div class="col_1_1">
-        <img src="assets/04.04.01-queryselector.png" class="border" alt="04.04.01-queryselector" />
+        <div>
+          <h4 class="black_overskrift_padding">Eksempel på Javascript</h4>
+          <br />
+          <img src="assets/04.04.01-queryselector.png" class="border" alt="04.04.01-queryselector" />
+        </div>
         <div>
           <h3 class="black_overskrift_padding">Javascript</h3>
           <br />
           <p class="black_tekst_padding">
-            En stor del af opgaven gik med Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument med query.selector. I parentesen skriver
-            man navnet på den class eller id, man kalder på. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en anden tilstand. <br />
-            <br />
-            I eksemplet til venstre kan man se, at jeg gennem query.selector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove fjerner jeg en
-            klasse, som i mit tilfælde er en class med navnet ‘hide’. <br />
-            <br />
-            I linjen nedenunder bruger jeg document.query.selector til at lede efter id ‘start_btn’. Derefter bruger jeg addEventListener til at lytte efter et museklik på knappen, som vil sætte funktionen SidenVises i gang. I linjen efter sættes
-            baggrundsmusikken til at spille.
+            En stor del af opgaven gik med Javascript, som kan få siden til at reagere på forskellige events i forskellige situationer. Her lærte vi bl.a., at man kunne tilgå ethvert element i et HTML dokument og tilhørende CSS-dokument med metoden
+            document.querySelector. I parentesen skriver man navnet på den class eller id, man kalder på i CSS dokumentet. Man kan også lytte efter events på siden, fx et museklik, ved at anvende eventListener, som derefter som regel vil medfølge en
+            anden tilstand. <br /><br />
+
+            I eksemplet til venstre kan man se, at jeg gennem document.querySelector kalder på et id med navnet ‘start’. Derefter bruger jeg classList som er en property der enten tilføjer eller fjerner en klasse. Ved at bruge classList.remove
+            fjerner jeg en klasse, som i mit tilfælde er en class med navnet ‘hide’. <br /><br />
+
+            I linjen nedenunder bruger jeg document.querySelector til at lede efter et id med navnet start_btn. Derefter bruger jeg addEventListener til at lytte efter et museklik på knappen, som vil sætte funktionen SidenVises i gang. I linjen efter
+            sættes baggrundsmusikken til at spille.
           </p>
         </div>
       </div>
