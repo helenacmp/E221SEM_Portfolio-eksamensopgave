@@ -528,6 +528,22 @@ col_1_2 img {
     box-sizing: border-box;
   }
 
+  /* links i dropdown menu */
+  .dropdown_menu {
+    display: none;
+    background-color: white;
+    background-size: cover;
+    z-index: 1;
+  }
+  /* links i dropdown menu */
+  .dropdown-item {
+    color: black;
+  }
+  /* styling af tekst i dropdown menu */
+  .dropdown-link {
+    color: black;
+  }
+
   /* ---------Porfolio site---------  */
   .col_4 {
     display: grid;
@@ -680,9 +696,17 @@ col_1_2 img {
   /* links i dropdown menu */
   .dropdown_menu {
     display: none;
-    background-image: url(../assets/red-orange.png);
+    background-color: white;
     background-size: cover;
     z-index: 1;
+  }
+  /* links i dropdown menu */
+  .dropdown-item {
+    color: black;
+  }
+  /* styling af tekst i dropdown menu */
+  .dropdown-link {
+    color: black;
   }
 
   /* ---------Porfolio site---------  */
